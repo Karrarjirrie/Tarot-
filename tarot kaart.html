@@ -20,7 +20,7 @@
             /* Keep overflow hidden to prevent scrollbars */
         }
 
-      
+
 
         #disappearingText h1 {
             font-size: 40px;
@@ -28,7 +28,7 @@
             /* Add opacity transition */
             background: url('giphy (1)eererer.gif');
             /* Replace 'giphy.gif' with the actual path to your gif */
-            background-size:10%;
+            background-size: 10%;
             background-color: rgba(255, 255, 255, 0.55);
             /* Adjust the color and opacity as needed */
             color: transparent;
@@ -42,28 +42,35 @@
 
 
         #disappearingText p {
-     font-size: 30px;
-    transition: opacity 0s ease;
-    /* Add opacity transition */
-    background: url('weqweqweqweqwqe.gif');
-    /* Replace 'giphy.gif' with the actual path to your gif */
-    background-size: 15%; /* Adjust the zoom level */
-    background-color: rgba(255, 255, 255, 0.55);
-    /* Adjust the color and opacity as needed */
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: gradientAnimation 240s linear infinite;
-    /* Adjust the duration as needed */
-    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    border: 2px solid #000; /* Adjust the color and width as needed */
-    border-radius: 10px; /* Adjust the border radius as needed */
-    padding: 20px; /* Adjust the padding as needed */
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-top: 1px;
-    display: inline-block;
-}
+            font-size: 30px;
+            transition: opacity 0s ease;
+            /* Add opacity transition */
+            background: url('weqweqweqweqwqe.gif');
+            /* Replace 'giphy.gif' with the actual path to your gif */
+            background-size: 15%;
+            /* Adjust the zoom level */
+            background-color: rgba(255, 255, 255, 0.55);
+            /* Adjust the color and opacity as needed */
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: gradientAnimation 240s linear infinite;
+            /* Adjust the duration as needed */
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            border: 5px solid #000;
+            border-image: url('stars.gif');
+    border-image-slice: 1% 1% 1% 1%;
+    border-image-width: 5px; /* Adjust the width as needed */
+          /* Adjust the color and width as needed */
+            border-radius: 5px;
+            /* Adjust the border radius as needed */
+            padding: 20px;
+            /* Adjust the padding as needed */
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 1px;
+            display: inline-block;
+        }
 
 
         #disappearingText.hidden {
@@ -262,8 +269,8 @@
 
         }
 
-    
-        
+
+
 
         .Decktxt {
             margin-top: 40px;
@@ -298,10 +305,13 @@
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
         }
 
-        
+
 
         @media screen and (max-width: 600px) {
-            h1 {font-size: 30px}
+            h1 {
+                font-size: 30px
+            }
+
             #disappearingText h1 {
                 font-size: 20px;
                 margin-top: 50px;
@@ -311,7 +321,12 @@
                 font-size: 16px;
                 margin-left: 2%;
                 margin-right: 2%;
+                border: 1px solid #000;
+                border-image: url('stars.gif');
+                border-image-slice: 100; /* Adjust the slicing as needed */
+    border-image-width: 5px; /* Adjust the width as needed */
             }
+
             .card {
                 border: 1px solid #ccc;
                 padding: 20px;
@@ -326,148 +341,147 @@
                 position: relative;
                 vertical-align: top;
             }
-            
-        .card p {
-            font-size: 10px;
-            margin-top: 5px;
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            right: 0;
-        }
+
+            .card p {
+                font-size: 10px;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                right: 0;
+            }
 
 
-        #disappearingText.hidden {
-            opacity: 0;
-            /* Set opacity to 0 for hidden state */
-        }
+            #disappearingText.hidden {
+                opacity: 0;
+                /* Set opacity to 0 for hidden state */
+            }
 
-        .card-container {
-            font-size: 10px;
-            margin-top: 15px;
-            position: relative;
-            /* Add position: relative */
-        }
-
-       
-
-     
+            .card-container {
+                font-size: 10px;
+                margin-top: 15px;
+                position: relative;
+                /* Add position: relative */
+            }
 
 
 
-        img {
-            max-width: 110%;
-            /* Adjusted to 100% to fit the increased card size */
-            max-height: 140%;
-            /* Adjusted to 100% to fit the increased card size */
-            border-radius: 2px;
-        }
 
 
 
-        h2 {
-            margin-top: 5px;
-        }
 
-        .card p {
-            font-size: 9px;
-            margin-top: 5px;
-            position: absolute;
-            bottom: 2px;
-            left: 0;
-            right: 0;
-        }
+            img {
+                max-width: 110%;
+                /* Adjusted to 100% to fit the increased card size */
+                max-height: 140%;
+                /* Adjusted to 100% to fit the increased card size */
+                border-radius: 2px;
+            }
 
 
-        #cardContainer {
-                font-size: 20px;}
+
+            h2 {
+                margin-top: 5px;
+            }
+
+            .card p {
+                font-size: 9px;
+                margin-top: 5px;
+                position: absolute;
+                bottom: 2px;
+                left: 0;
+                right: 0;
+            }
+
+
+            #cardContainer {
+                font-size: 20px;
+            }
 
             .Decktxt {
-            margin-top: 40px;
-            font-size: 40px;
-            transition: opacity 60s ease;
-            /* Add opacity transition */
-            background: url('giphy (1)eererer.gif');
-            /* Replace 'giphy.gif' with the actual path to your gif */
-            background-size: 10%;
-            background-color: rgba(255, 255, 255, 0.55);
-            /* Adjust the color and opacity as needed */
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: gradientAnimation 120s linear infinite;
-            /* Adjust the duration as needed */
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+                margin-top: 40px;
+                font-size: 40px;
+                transition: opacity 60s ease;
+                /* Add opacity transition */
+                background: url('giphy (1)eererer.gif');
+                /* Replace 'giphy.gif' with the actual path to your gif */
+                background-size: 10%;
+                background-color: rgba(255, 255, 255, 0.55);
+                /* Adjust the color and opacity as needed */
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: gradientAnimation 120s linear infinite;
+                /* Adjust the duration as needed */
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+
+            #cardDeck li {
+                display: inline-block;
+                margin-right: -11px;
+                /* Adjust the negative margin for overlap */
+
+            }
+
+            #cardDeck li img {
+                max-width: inherit;
+                top: 0;
+                width: 19px;
+                position: relative;
+
+            }
+
+            .Decktxt {
+                margin-top: 10px;
+                font-size: 20px;
+                transition: opacity 60s ease;
+                /* Add opacity transition */
+                background: url('giphy (1)eererer.gif');
+                /* Replace 'giphy.gif' with the actual path to your gif */
+                background-size: 10%;
+                background-color: rgba(255, 255, 255, 0.55);
+                /* Adjust the color and opacity as needed */
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: gradientAnimation 120s linear infinite;
+                /* Adjust the duration as needed */
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            .readingText {
+                font-size: 60px;
+                margin-top: -20px;
+                /* Adjust this value to move the text higher or lower */
+                transition: opacity 70s ease;
+                background: url('fdsdsfdsdsf.gif');
+                background-size: cover;
+                background-color: rgba(255, 255, 255, 0.55);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: gradientAnimation 120s linear infinite;
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+            .readingText {
+                font-size: 10px;
+                margin-top: -20px;
+                /* Adjust this value to move the text higher or lower */
+                transition: opacity 70s ease;
+                background: url('fdsdsfdsdsf.gif');
+                background-size: cover;
+                background-color: rgba(255, 255, 255, 0.55);
+                color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+                animation: gradientAnimation 120s linear infinite;
+                text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            }
+
+
         }
-
-
-        #cardDeck li {
-            display: inline-block;
-            margin-right: -11px;
-            /* Adjust the negative margin for overlap */
-
-        }
-
-        #cardDeck li img {
-            max-width: inherit;
-            top: 0;
-            width: 19px;
-            position: relative;
-
-        }
-
-        .Decktxt {
-            margin-top: 10px;
-            font-size: 20px;
-            transition: opacity 60s ease;
-            /* Add opacity transition */
-            background: url('giphy (1)eererer.gif');
-            /* Replace 'giphy.gif' with the actual path to your gif */
-            background-size: 10%;
-            background-color: rgba(255, 255, 255, 0.55);
-            /* Adjust the color and opacity as needed */
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: gradientAnimation 120s linear infinite;
-            /* Adjust the duration as needed */
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .readingText {
-            font-size: 60px;
-            margin-top: -20px;
-            /* Adjust this value to move the text higher or lower */
-            transition: opacity 70s ease;
-            background: url('fdsdsfdsdsf.gif');
-            background-size: cover;
-            background-color: rgba(255, 255, 255, 0.55);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: gradientAnimation 120s linear infinite;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        .readingText {
-            font-size: 10px;
-            margin-top: -20px;
-            /* Adjust this value to move the text higher or lower */
-            transition: opacity 70s ease;
-            background: url('fdsdsfdsdsf.gif');
-            background-size: cover;
-            background-color: rgba(255, 255, 255, 0.55);
-            color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-            animation: gradientAnimation 120s linear infinite;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-        }
-
-        
-        }
-    
-
     </style>
 </head>
 
@@ -522,10 +536,11 @@
             </div>
         </div>
         <div id="disappearingText">
-            <h1>Nog voor je de kaarten laat spreken!</h1> <p>Neem een moment om je gedachten te bundelen rond een specifieke
-            vraag. Selecteer vervolgens drie kaarten uit het mystieke deck. En laat de magie van tarot je een unieke
-            blik gunnen op wat de
-            toekomst voor jou in petto heeft. Zo trotseer je de komende dagen met extra sereniteit en mysterie!</p>
+            <h1>Nog voor je de kaarten laat spreken!</h1>
+            <p>Neem een moment om je gedachten te bundelen rond een specifieke
+                vraag. Selecteer vervolgens drie kaarten uit het mystieke deck. En laat de magie van tarot je een unieke
+                blik gunnen op wat de
+                toekomst voor jou in petto heeft. Zo trotseer je de komende dagen met extra sereniteit en mysterie!</p>
         </div>
         <div class="card-selection">
             <h2 class="Decktxt">Kies 3 kaarten uit het deck:</h2>
@@ -721,11 +736,11 @@
         var clickedCardCount = 0;
 
 
-       // Declare a variable to keep track of clicked cards count
-var clickedCardCount = 0;
+        // Declare a variable to keep track of clicked cards count
+        var clickedCardCount = 0;
 
 
-function revealSelectedCard(cardId, index) {
+        function revealSelectedCard(cardId, index) {
             hideText();
 
             // Reference to the card element
@@ -832,30 +847,30 @@ function revealSelectedCard(cardId, index) {
             var reading = "Your reading: " +
                 selectedCards.map(card => card.description).join(", ");
 
-       // Update the content of the reading text div
-readingTextDiv.innerText = reading;
-readingTextDiv.style.transition = 'opacity 70s ease';
-readingTextDiv.style.textShadow = '4px 4px 8px rgba(0, 0, 0, 0.5)';
+            // Update the content of the reading text div
+            readingTextDiv.innerText = reading;
+            readingTextDiv.style.transition = 'opacity 70s ease';
+            readingTextDiv.style.textShadow = '4px 4px 8px rgba(0, 0, 0, 0.5)';
 
-// Check if the screen width is less than or equal to 767px (mobile size)
-if (window.innerWidth <= 767) {
-    readingTextDiv.style.marginTop = '-100px';  // Adjusted value for mobile
-    readingTextDiv.style.fontSize = '10px';
-    readingTextDiv.style.background = 'url(\'weqweqweqweqwqe.gif\')';
-    readingTextDiv.style.backgroundSize = 'cover';
-    readingTextDiv.style.backgroundColor = 'rgba(255, 255, 255, 0.55)';
-    readingTextDiv.style.color = 'transparent';
-    readingTextDiv.style.webkitBackgroundClip = 'text';
-    readingTextDiv.style.backgroundClip = 'text';
-    readingTextDiv.style.animation = 'gradientAnimation 120s linear infinite';
-} else {
-    // Styles for larger screens (if needed)
-    readingTextDiv.style.marginTop = '-300px';
-    readingTextDiv.style.fontSize = '40px';
-    // Add additional styles for larger screens if necessary
-}
+            // Check if the screen width is less than or equal to 767px (mobile size)
+            if (window.innerWidth <= 767) {
+                readingTextDiv.style.marginTop = '-100px';  // Adjusted value for mobile
+                readingTextDiv.style.fontSize = '10px';
+                readingTextDiv.style.background = 'url(\'weqweqweqweqwqe.gif\')';
+                readingTextDiv.style.backgroundSize = 'cover';
+                readingTextDiv.style.backgroundColor = 'rgba(255, 255, 255, 0.55)';
+                readingTextDiv.style.color = 'transparent';
+                readingTextDiv.style.webkitBackgroundClip = 'text';
+                readingTextDiv.style.backgroundClip = 'text';
+                readingTextDiv.style.animation = 'gradientAnimation 120s linear infinite';
+            } else {
+                // Styles for larger screens (if needed)
+                readingTextDiv.style.marginTop = '-300px';
+                readingTextDiv.style.fontSize = '40px';
+                // Add additional styles for larger screens if necessary
+            }
         }
-        
+
 
     </script>
 
